@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function objectex() {
+            function subject(name, scode) {
+                this.name = name;
+                this.scode = scode;
+
+                this.printsubject() = function () {
+                    console.log(`Subject name=${this.name}`);
+                    console.log(`subject scode=${this.scode}`);
+                }
+            }
+
+            let subject1 = new subject("abc", "abc");
+            subject1.printsubject();
+            let subject2 = new subject("abc", "abc");
+            subject2.printsubject();
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="objectex()">Click Here</button>
+
+</body>
+
+</html>

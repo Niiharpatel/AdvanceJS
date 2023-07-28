@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        let tasklist = new Map();
+        function addList() {
+            let txt = document.getElementById("in1").value;
+            tasklist.set(txt, txt);
+            console.log(tasklist);
+
+            document.getElementById("in1").value = "";
+
+            printTask();
+        }
+
+        function printTask() {
+            str = "";
+            tasklist.forEach(function (value, key, map) {
+
+                str += `<tr><td>${key}</td><td><button id=${key} onclick="deleteTask(this.id)">delete</button></td></tr>`;
+
+            })
+            document.getElementById("listTr").innerHTML = str;
+        }
+
+        function deleteTask(id) {
+            tasklist.delete(id);
+            printTask();
+        };
+
+        function allClear() {
+            tasklist.clear();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <input type="text" name="" id="in1">
+
+        <button onclick="addList()">Add</button>
+
+        <button onclick="allClear()">Clear</button>
+
+        <table border="2px solid black" cellspacing="10px" cellpadding="">
+            <tbody id="listTr"></tbody>
+
+
+        </table>
+    </div>
+</body>
+
+</html>

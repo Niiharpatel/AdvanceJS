@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        let color;
+        let choice = prompt("Press 1 for red \n Press 2 for blue");
+        let pid = document.getElementById("para");
+        choice = Number(choice);
+        alert(choice);
+
+
+        switch (choice) {
+            case 1: pid.style.color = "red";
+                break;
+
+            case 2: pid.style.color = "blue";
+                break;
+            default: alert("wrong choice");
+                break;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, officia voluptas? Sequi earum eum
+        quaerat.
+        Veritatis enim natus vel, deserunt harum dolorum repellat ipsam, ipsum explicabo, asperiores libero sit quos?
+    </p>
+
+</body>
+
+</html>

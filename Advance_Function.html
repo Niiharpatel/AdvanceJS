@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // let even = function (num) {  // expression..  Anonymous function....
+        //     alert(`${num} is even`);
+        // }
+
+        let even = (num) => {       // arrow function..
+            alert(`${num} is even`);
+        }
+
+
+        function odd(num) {
+            alert(`${num} is odd`);
+        }
+
+        function askq(que, even, odd) {  //in function parameter another functions are used it's call callback functions..
+
+            ans = prompt(que);
+            if (ans % 2 == 0) {
+                even(ans);
+            } else {
+                odd(ans);
+            }
+        }
+
+
+        function callback() {
+            askq("Enter Value", even, odd);
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="callback()">Call Back</button>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function find() {
+
+        let x, y;
+        x = prompt("Enter the value of X");
+        y = prompt("Enter the value of Y");
+        if (x > 0 && y > 0) {
+            alert("First")
+        } else if (x < 0 && y > 0) {
+            alert("Second")
+        } else if (x < 0 && y < 0) {
+            alert("Third")
+        } else if (x > 0 && y < 0) {
+            alert("Fourth")
+        }
+    }
+</script>
+
+<body>
+    <button onclick="find()">Click Here</button>
+</body>
+
+</html>

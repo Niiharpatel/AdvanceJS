@@ -1,0 +1,435 @@
+// -> make one array who have value from 1 to 10
+
+// 1. print 9th and 10th index of array
+// 2. print every element of array by map reduce and for loop
+// 3. change a value of 6th index with 100
+// 4. print a array till element value not gratter then 100
+// 5. pluse 1 in every element of an array
+// 6. add 0 in start of array
+// 7. add  99 in end of array
+// 8. remove 1 element from start of  array
+// 9. remove 1 element from end of array
+// 10. do sum of all value of an array with use of map, reduce and for-loop
+// 11. sort a array in acending decending
+// 12. reverce an array with use of method
+// 13. reverce an array with use of for-loop
+
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// console.log(arr[9]);  // 1: 10
+// console.log(arr[10]);  // Undefined...
+// console.log(arr.indexOf(8))
+
+// 2:
+//map.........
+// let newarr = arr.map((i) => {
+//     console.log(i);
+
+// })
+
+// reduce...........................................................
+
+// let red = arr.reduce((lastEle, ele) => {
+//     console.log("Element:", lastEle)
+//     console.log(ele);
+
+//     return ele;
+
+// }, 0)
+// console.log("Ans:", red) // 10
+
+// For loop........
+
+// for (let i = 0; i < arr.length; i++) {
+//     let count = arr[i];
+//     console.log("Element:", count)
+
+// }
+
+
+// console.log(arr[10]);  // 3: undefined......
+
+// arr[6] = 100;  // 4
+
+// console.log(arr);
+
+
+
+//  4. print a array till element value not gratter then 100..
+
+// let arr1 = [1, 2, 3, 4, 5, 6, 100, 8, 9, 10];
+
+// for (let i = 0; i < arr1.length; i++) {
+
+//     let count = arr1[i];
+
+//     if (arr1[i] == 100) {
+
+//         break;
+
+//     }
+//     console.log("Element:", count);
+
+// }
+
+//5. pluse 1 in every element of an array..
+// let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+// for (let i = 0; i < arr2.length; i++) {
+//     let count = arr2[i] + 1;
+//     console.log("Element:", count)
+
+// }
+
+
+
+// 6. add 0 in start of array...........
+
+// let arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// arr3.unshift(0); // add an element in start of array..
+
+// console.log("🚀 ~ file: 27-06-23(task):91 ~ arr3:", arr3);
+
+
+// 7. add  99 in end of array...........
+
+// let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// arr4.push(99);  // add an element in end of array..
+
+// console.log("🚀 ~ file: 27-06-23(task):100 ~ arr4:", arr4)
+
+
+// 8. remove 1 element from start of  array..........
+
+// let arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// arr5.shift();
+// console.log("🚀 ~ file: 27-06-23(task):110 ~ arr5:", arr5)
+
+
+// 9. remove 1 element from end of array
+
+// let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// arr6.pop();
+// console.log("🚀 ~ file: 27-06-23(task):110 ~ arr5:", arr6)
+
+
+// 10. do sum of all value of an array with use of map, reduce and for-loop
+// let arr7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+//map..........
+// let total = 0;
+
+// let data = arr7.map((i) => {
+
+//     total = total + i;
+
+// })
+// console.log("Total:", total)
+
+
+//Reduce.........
+// total = 0;
+
+// let sum = arr7.reduce((lastEle, ele) => {
+
+//     total = total + ele;
+
+// }, 0)
+// console.log("🚀 ~ file: 27-06-23(task):143 ~ sum ~ total:", total)
+
+
+//For loop...............
+// let total = 0;
+
+// for (let i = 0; i < arr7.length; i++) {
+
+
+//     total = total + arr7[i];
+
+// }
+
+// console.log("Total:", total)
+
+
+// 11. sort a array in acending decending.............
+// let arr8 = [5, 6, 4, 3, 9, 7, 8, 1, 2];
+// console.log(arr8.sort())  // sort convert the array in ascending form..
+
+//==================================== OR ========================================================
+// let arr8 = [5, 6, 40, 3, 90, 7, 8, 11, 2];
+// arr8.sort(function (a, b) {
+//     return a - b;
+// })
+// console.log("🚀 ~ file: 27-06-23(task):170 ~ arr8:", arr8)
+
+// console.log(arr8.reverse())
+
+
+
+// 12. reverse an array with use of method.........
+// let arr9 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// console.log(arr9.reverse());  // using method...\
+
+
+
+// 13. reverce an array with use of for-loop............
+
+// let arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let newarr = [];
+
+// for (let i = 0; i < arr10.length; i++) {
+
+//     newarr.unshift(arr10[i]);
+//     console.log("🚀 ~ file: 27-06-23(task):191 ~ newarr:", newarr)
+
+// }
+
+
+
+// ======================================= Task-2 ==============================================
+
+
+// let array = [1, 2, 3, 6, 7, 9, 3, 56, 8]
+
+// let store = [];
+
+// 1. give all value which can devided by 2 - not use filter
+// 2. give all value above 3 by use of filter
+// 3. give index of 56
+// 4. give true/false result when check given vale is exists in array or not
+
+
+// 1. give all value which can devided by 2 - not use filter:
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 == 0) {
+
+//         store.push(array[i]);
+
+//     }
+
+// }
+// console.log(store);
+
+// ------------------------------ OR -------------------------------
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let arr = array.map((e) => {
+
+//     return e % 2 == 0;
+// })
+// console.log(arr)
+
+
+// 2. give all value above 3 by use of filter:
+
+// let data = array.filter((e) => {
+//     return e > 3;
+// })
+// console.log("🚀 ~ file: 27-06-23(task):224 ~ data ~ data:", data)
+
+// 3. give index of 56:
+
+// console.log(array[7]);
+
+// 4. give true/false result when check given vale is exists in array or not:
+
+// let data = array.includes(6);
+// console.log("Ans is:", data)
+
+
+// ================================================= Task-3 ==================================================
+
+// 1. ['i','am', 'urvish'] ==> want ['urvish','am','i']
+// by use of map, loop and reducer
+// 2. want "i am urvish" without use join method
+
+// let arr = ['i', 'am', 'nihar'];
+// let str = [];
+
+//Using Map..........
+
+// let data = arr.map((e, i) => {
+
+//     return arr[arr.length - 1 - i];
+
+// });
+// console.log("Rev:", data)
+
+
+// Using loop........
+
+// for (let i = arr.length - 1; i >= 0; i--) {
+
+//     str.push(arr[i]);
+// }
+// console.log("Rev:", str);
+
+
+// Using Reduce...
+
+// let data = arr.reduce((lastEle, ele) => {
+//     // lastEle ? str.unshift(lastEle, ele) : str.unshift(ele);
+
+//     //or
+
+//     str.unshift(ele);
+
+// }, 0);
+
+// console.log("Rev:", str);
+
+
+// 2. want "i am urvish" without use join method..........
+
+// let arr = ['i', 'am', 'nihar'];
+// let total = '';
+
+// for (let i = 0; i < arr.length; i++) {
+
+//     total = total + arr[i] +" ";
+
+// }
+// console.log("🚀 ~ file: 27-06-23(task):299 ~ total:", total);
+
+
+// ======================================= Task - 4 =======================================
+
+// ['i','am', 'urvish'] ==> want ['hsivru','ma','i'  ]
+// by use of map, loop and reducer
+
+let arr = ['i', 'am', 'nihar'];
+let str = [];
+
+// Using For loop..........
+
+
+// for (let i = 0; i < arr.length; i++) {
+
+//     let x = arr[i].split("");    // split the character by character in array.....
+
+//     let y = x.reverse();         // reverse the character by character... 
+
+//     let z = y.join("");          // joint the character and give....
+
+//     str.push(z);                 // Store the elements in blank array...
+
+// }
+
+// let a = str.reverse();           // Reverse the elements...
+
+// console.log("Using For loop ans is: ", a);
+
+
+
+// Using Map......
+
+// let data = arr.map((e) => {
+
+//     let x = e.split("");
+
+//     let y = x.reverse();
+
+//     let z = y.join("");
+
+//     str.push(z);
+
+// })
+
+// let a = str.reverse();
+
+// console.log("Using Map ans is: ", a);
+
+
+
+// Using Reduce........
+
+let data = arr.reduce((lastEle, ele) => {
+
+    let x = ele.split(" ");
+    console.log("🚀 ~ file: 27-06-23(task):358 ~ data ~ x:", x)
+
+    let y = x.reverse();
+
+    let z = y.join("");
+
+    str.push(z);
+
+
+}, 0)
+
+let a = str.reverse();
+
+console.log("Using Reduce ans is: ", a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

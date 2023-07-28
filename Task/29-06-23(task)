@@ -1,0 +1,115 @@
+
+let family = {
+    name: "Bhanabhai",
+    age: 75,
+    child: [{
+        id: 101,
+        name: "Kalyanjibhai",
+        age: 52,
+        vehicle: [{
+            veh_name: "Bullet",
+            veh_no: "GJ-15-CL-6350"
+        }],
+        son: [{
+            name: "Nihar",
+            age: 23,
+
+        }, {
+            name: "Cherishma",
+            age: 28
+        }]
+    }, {
+        id: 102,
+        name: "Ashokbhai",
+        age: 55,
+        vehicle: [{
+            veh_name: "Shine",
+            veh_no: "GJ-15-DL-1327"
+        }],
+        son: [{
+            name: "Bhargav",
+            age: 35,
+
+        }, {
+            name: "Anjali",
+            age: 32,
+
+        }]
+    }, {
+        id: 103,
+        name: "Miraben",
+        age: 65,
+        vehicle: [{
+            veh_name: "Pleasure",
+            veh_no: "GJ-15-CL-6485"
+        }],
+        son: [{
+            name: "Ashish",
+            age: 36,
+
+        }, {
+            name: "Jesmin",
+            age: 34,
+
+        }]
+    }],
+}
+
+
+// ==========================================================================================================
+// -> all son of your dada
+
+// let data = family.child.map((e) => {
+//     console.log("Child Name:", e?.name);
+// })
+
+
+// ======================================================================================================
+// -> all son of father/uncle's:
+
+function printChildById(id) {
+    let data = family?.child.find((e) => {
+        return e.id == id;
+    })
+    // console.log("Data:", data.name)
+
+    data.son.map((x) => {
+        console.log(x.count);
+    })
+
+    // data.vehicle.map((x) => {
+    //     console.log(x);
+    // })
+
+}
+
+// printChildById(101)
+
+
+
+
+
+// -----------------------------------------------------------------------------------
+// function details(id) {
+//     console.log(family?.child[id].son);
+// }
+
+// details(0);
+
+
+
+// ==========================================================================================================
+// -> badha family ni vehicale details like me jeni id apu aa family ni:
+
+function printVehicleById(id) {
+    let data = family?.child.find((e) => {
+        return e.id == id;
+    })
+
+    return data.vehicle;
+}
+
+let store = printVehicleById(102);
+console.log("store:", store);
+
+

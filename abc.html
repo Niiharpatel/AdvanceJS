@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Header</title>
+    <style>
+        /* Example styles for the header */
+        .header {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .menu-item {
+            margin-left: 10px;
+        }
+
+        /* Styles for responsive header */
+        @media screen and (max-width: 600px) {
+            .logo {
+                font-size: 16px;
+            }
+
+            .menu {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .menu-item {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">My Website</div>
+        <nav class="menu">
+            <a class="menu-item" href="#">Home</a>
+            <a class="menu-item" href="#">About</a>
+            <a class="menu-item" href="#">Services</a>
+            <a class="menu-item" href="#">Contact</a>
+        </nav>
+    </header>
+
+    <script>
+        function adjustHeader() {
+            var logo = document.querySelector('.logo');
+            var menu = document.querySelector('.menu');
+
+            if (window.innerWidth <= 600) {
+                logo.style.fontSize = '16px';
+                menu.style.justifyContent = 'flex-start';
+                menu.style.flexWrap = 'wrap';
+                menu.querySelectorAll('.menu-item').forEach(function (item) {
+                    item.style.margin = '5px';
+                });
+            } else {
+                logo.style.fontSize = '20px';
+                menu.style.justifyContent = 'flex-end';
+                menu.style.flexWrap = 'initial';
+                menu.querySelectorAll('.menu-item').forEach(function (item) {
+                    item.style.margin = '0 10px';
+                });
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', adjustHeader);
+        window.addEventListener('resize', adjustHeader);
+    </script>
+</body>
+
+</html>
