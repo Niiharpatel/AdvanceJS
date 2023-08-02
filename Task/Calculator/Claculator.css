@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.main {
+  border: 1px solid #717377;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: transparent;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+input {
+  width: 300px;
+  border: none;
+  padding: 25px;
+  margin: 10px;
+  background: transparent;
+  box-shadow: 0px 2px 5px rgba(84, 84, 84, 0.1);
+  font-size: 30px;
+  text-align: right;
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  margin-left: 13px;
+}
+
+button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  background: transparent;
+  color: #ffffff;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  font-size: 17px;
+
+}
+
+.eql-btn {
+  background-color: orangered;
+  color: white;
+  font-size: 20px;
+}
+
+.operator {
+  color: #6dee0a;
+}
