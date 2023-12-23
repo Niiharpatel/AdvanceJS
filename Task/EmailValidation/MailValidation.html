@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Email: </label>
+    <input type="email" onkeyup="fun()" id="in">
+    
+        <span id="head"></span>
+    
+
+
+
+
+    <script>
+
+        function fun() {
+            let input = document.getElementById('in').value;
+
+            let reg_ex = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
+
+            if (reg_ex.test(input)) {
+                document.getElementById('head').innerHTML = ""
+
+            } else {
+                document.getElementById('head').innerHTML = "invalid mail"
+
+                return false;
+            }
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -13,7 +13,7 @@ console.log("array - ", array);
 console.log("newarray - ", newArray);
 
 
-// // Reduce...
+// Reduce...
 
 // let total = array.reduce((lastEle, ele) => {
 //     console.log("LastElement is: ", lastEle);
@@ -24,32 +24,32 @@ console.log("newarray - ", newArray);
 
 // console.log("Reduce:", total);
 
-// // Filter..
+// Filter..
 
 // let fil = [1, 2, 3, 4, 5, 6];
 
 // let filteraray = fil.filter((e) => e > 5);
 // console.log("filter array is: ", filteraray);
 
-// // Reverse..
+// Reverse..
 // let rev = array.reverse((e) => e);
 // console.log(rev);
 
-// // Toreverse.......
+// Toreverse.......
 // const find = [1, 2, 3, 4]
 
 // const ans = find.toReversed();
 // console.log("Toreverse: ", ans);
 
 
-// // Toshorted...
+// Toshorted...
 
 // const find1 = [1, 2, 30, 4]
 
 // const ans1 = find1.toSorted();
 // console.log("Tosort: ", ans1);
 
-// // Tosplice.....
+// Tosplice.....
 
 // const find2 = [1, 2, 3, 4]
 
@@ -58,12 +58,12 @@ console.log("newarray - ", newArray);
 
 
 
-// // Splice...
+// Splice...
 
 // let spli = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// // let spl = spli.splice(2)
-// // console.log(spl)
+// let spl = spli.splice(2)
+// console.log(spl)
 
 // let spl1 = spli.splice(2, 2)
 // console.log(spl1)
